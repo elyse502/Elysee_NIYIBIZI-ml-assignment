@@ -1,3 +1,4 @@
 ml-env
 .ipynb_checkpoints/
 .gradio/
+*.csv
