@@ -102,7 +102,7 @@ plt.show()
 ```python
 from sklearn.linear_model import LinearRegression
 model = LinearRegression()
-model.fit(X, y)
+model.fit(x, y)
 ```
 
 ### Interpretation:
@@ -123,7 +123,7 @@ model.fit(X, y)
 
 ```python
 from sklearn.metrics import mean_squared_error
-y_pred = model.predict(X)
+y_pred = model.predict(x)
 mse = mean_squared_error(y, y_pred)
 ```
 
@@ -193,23 +193,30 @@ gr.Interface(fn=predict, inputs="number", outputs="text").launch()
 ### 1. Clone the Repo
 
 ```console
-git clone https://github.com/elyse502/ai-learnings.git
-cd ai-learnings
+git clone https://github.com/elyse502/Elysee_NIYIBIZI-ml-assignment
+.git
+cd Elysee_NIYIBIZI-ml-assignment
 ```
 
-### 2. Install Requirements
+### 2. Create a virtual environment (Prevents System Pollution)
+```console
+python -m venv ml-env
+source ml-env/bin/activate  # or ml-env\Scripts\activate on Windows
+```
+
+### 3. Install Requirements
 
 ```console
 pip install -r requirements.txt
 ```
 
-### 3. Open the Notebook
+### 4. Open the Notebook
 
 ```console
 jupyter notebook notebook.ipynb
 ```
 
-### 4. Run the App (optional)
+### 5. Run the App (optional)
 
 ```console
 python app.py
